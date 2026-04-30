@@ -16,6 +16,9 @@ body {
 .navbar {
     background: #0e1621;
     border-bottom: 1px solid #1f2a37;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .nav-container {
@@ -45,6 +48,11 @@ body {
     background: #2563eb;
     color: white;
     font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
 }
 
 .menu-toggle {
@@ -87,6 +95,7 @@ body {
     border-radius: 6px;
     margin-right: 8px;
     font-size: 0.8rem;
+    transition: 0.3s;
 }
 
 .primary-btn {
@@ -94,9 +103,18 @@ body {
     color: #0e1621;
 }
 
+.primary-btn:hover {
+    background: #60b4ff;
+}
+
 .secondary-btn {
     border: 1px solid #4da3ff;
     color: #4da3ff;
+}
+
+.secondary-btn:hover {
+    background: #4da3ff;
+    color: #0e1621;
 }
 
 /* SECTIONS */
@@ -129,9 +147,14 @@ body {
     background: #1f2a37;
     padding: 18px;
     border-radius: 8px;
+    transition: 0.3s;
 }
 
-/* DLL VISUAL */
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* VISUAL BLOCK */
 
 .dll-visual {
     display: flex;
@@ -153,22 +176,6 @@ body {
 .arrow {
     font-size: 1.4rem;
     color: #4da3ff;
-}
-
-/* MATH BOX */
-
-.math-box {
-    background: #1f2a37;
-    padding: 25px 35px;
-    border-radius: 10px;
-    margin: 30px auto;
-    width: fit-content;
-}
-
-.math-box pre {
-    font-family: monospace;
-    font-size: 1.1rem;
-    color: #e6edf3;
 }
 
 /* FLOW */
@@ -194,6 +201,16 @@ body {
     color: #4da3ff;
 }
 
+/* LIST */
+
+.list {
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 8px;
+}
+
 /* TECH */
 
 .tech span {
@@ -203,6 +220,14 @@ body {
     border-radius: 16px;
     margin: 6px 6px 0 0;
     font-size: 0.75rem;
+}
+
+/* ABOUT */
+
+.about {
+    max-width: 700px;
+    margin-top: 10px;
+    color: #c9d1d9;
 }
 
 /* FOOTER */
