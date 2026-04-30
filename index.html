@@ -2,21 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inverted Search Engine</title>
+    <title>Inverted Search Engine in C</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Inverted Search Engine</h1>
-        <p class="subtitle">Search words across indexed files</p>
+<header class="navbar">
+    <div class="nav-container">
+        <div class="logo">Inverted Search</div>
 
-        <input type="text" id="searchInput" placeholder="Enter keyword...">
-        <button onclick="search()">Search</button>
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
 
-        <div id="results"></div>
+        <div class="nav-buttons" id="navButtons">
+            <a href="https://github.com/Manu-hp1" class="btn">GitHub Profile</a>
+            <a href="https://github.com/YOUR_REPO" class="btn">View Project</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-left">
+        <h1>Inverted Search<br>Engine</h1>
     </div>
 
-    <script src="script.js"></script>
+    <div class="hero-right">
+        <p>
+            A C-based keyword search system that retrieves files instantly using an inverted index, eliminating repeated file scanning.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="https://github.com/YOUR_REPO" class="primary-btn">Source Code</a>
+            <a href="https://youtube.com/YOUR_DEMO" class="secondary-btn">Watch Demo</a>
+        </div>
+    </div>
+</section>
+
+<!-- CORE CONCEPT -->
+<section class="section">
+    <h2>Core Concept</h2>
+    <div class="features">
+        <div class="card">
+            <h3>Inverted Index</h3>
+            <p>Maps each word to files where it appears.</p>
+        </div>
+        <div class="card">
+            <h3>Fast Retrieval</h3>
+            <p>Search without scanning every file.</p>
+        </div>
+        <div class="card">
+            <h3>Efficient Storage</h3>
+            <p>Stores word frequency and file references.</p>
+        </div>
+    </div>
+</section>
+
+<!-- VISUAL -->
+<section class="section light">
+    <h2>Inverted Index Representation</h2>
+
+    <div class="dll-visual">
+        <div class="node">data</div>
+        <div class="arrow">→</div>
+        <div class="node">file1(3)</div>
+        <div class="node">file2(1)</div>
+    </div>
+
+    <p class="about">
+        Each word points to a list of files along with occurrence count.
+    </p>
+</section>
+
+<!-- SEARCH FLOW -->
+<section class="section">
+    <h2>Search Flow</h2>
+
+    <div class="flow">
+        <div class="flow-step">Input Keyword</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Search in Index</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Retrieve File List</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">Display Results</div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section light">
+    <h2>Key Features</h2>
+    <ul class="list">
+        <li>• Fast keyword search using indexing</li>
+        <li>• Stores word occurrences per file</li>
+        <li>• Efficient file parsing</li>
+        <li>• Dynamic memory allocation</li>
+        <li>• Modular design for indexing & search</li>
+    </ul>
+</section>
+
+<!-- TECH -->
+<section class="section">
+    <h2>Technology Stack</h2>
+    <div class="tech">
+        <span>C Programming</span>
+        <span>Linked Lists</span>
+        <span>File Handling</span>
+        <span>Dynamic Memory</span>
+        <span>String Processing</span>
+        <span>Modular Design</span>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section light">
+    <h2>About the Developer</h2>
+    <p class="about">
+        Hi, I’m <strong>Manu H P</strong>, an Embedded Systems trainee at Emertxe.
+        This project helped me understand how search engines use data structures
+        to optimize performance and reduce time complexity.
+    </p>
+</section>
+
+<footer class="footer">
+    © 2026 Manu H P · Inverted Search Project
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
